@@ -1,3 +1,3 @@
-module Getbox
+module Getbook
   VERSION = "1.0.5"
 end

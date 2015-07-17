@@ -1,21 +1,21 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'getbox/version'
+require 'getbook/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "getbox"
-  spec.version       = Getbox::VERSION
+  spec.name          = "getbook"
+  spec.version       = Getbook::VERSION
   spec.authors       = ["Andrew Monks"]
   spec.email         = ["a@monks.co"]
 
-  spec.summary       = %q{Scrape your Gistbox page to export your label data.}
-  spec.homepage      = "http://github.com/amonks/getbox"
+  spec.summary       = %q{Download your data from Facebook and delete your account.}
+  spec.homepage      = "http://github.com/amonks/getbook"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   spec.bindir        = "exe"
   # spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.executables   = ['getbox']
+  spec.executables   = ['getbook']
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.9"

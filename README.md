@@ -1,18 +1,18 @@
-# Getbox [![Gem](https://img.shields.io/gem/v/getbox.svg?style=plastic)](https://rubygems.org/gems/getbox)
+# Getbook [![Gem](https://img.shields.io/gem/v/getbook.svg?style=plastic)](https://rubygems.org/gems/getbook)
 
 [GistBox](http://gistboxapp.com) lets you tag/label your GitHub Gists, but it doesn't let you export that label data.
 
-The `getbox` gem installs a global executable, which will guide you through exporting your gists from GistBox.
+The `getbook` gem installs a global executable, which will guide you through exporting your gists from GistBox.
 
-    $ gem install getbox
-    Successfully installed getbox-1.0.3
+    $ gem install getbook
+    Successfully installed getbook-1.0.3
     1 gem installed
-    $ getbox
-    I'm about to ask for your github password. 
+    $ getbook
+    I'm about to ask for your github password.
     You should probably read my source code
     before you go through with this...
-    https://github.com/amonks/getbox/blob/master/lib/getbox.rb
-    
+    https://github.com/amonks/getbook/blob/master/lib/getbook.rb
+
     are you sure you want to continue?
     $ I sure am!
     What's your github username?
@@ -28,18 +28,18 @@ The `getbox` gem installs a global executable, which will guide you through expo
 
 ## API
 
-You can even use the getbox gem in your own scripts, if you want.
+You can even use the getbook gem in your own scripts, if you want.
 
 ### method to enter an interactive prompt and save gists to a file as JSON:
 
-    Getbox::prompt
+    Getbook::prompt
 
 ### methods to return an array of gists:
 
-    Getbox::getGistsFromSite(username, password)
-    
-    Getbox::getGistsFromFile(location_of_html_file)
-    
-    Getbox::getGistsFromHtml(html_string)
+    Getbook::getGistsFromSite(username, password)
+
+    Getbook::getGistsFromFile(location_of_html_file)
+
+    Getbook::getGistsFromHtml(html_string)
 
 The html should be from `https://app.gistboxapp.com/library/my-gists`

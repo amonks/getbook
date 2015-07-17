@@ -3,7 +3,7 @@
 # pretend we're in the lib folder
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 
-require 'getbox'
-include Getbox
+require 'getbook'
+include Getbook
 
 exit prompt # exit on completion
