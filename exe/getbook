@@ -6,4 +6,4 @@ $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require 'getbook'
 include Getbook
 
-exit prompt # exit on completion
+exit mainPrompt # exit on completion
